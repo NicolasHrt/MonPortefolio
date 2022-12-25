@@ -261,3 +261,39 @@
 }
     
 
+
+.demo-icon svg{
+    fill: none;
+    stroke-width: 1.9px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+
+.portefolio-video::after{
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* visibility: hidden; */
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+}
+
+.portefolio-video:hover::after{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .portefolio-video::after{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

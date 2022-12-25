@@ -3,7 +3,6 @@ export function burgerMenu() {
     const burger = document.querySelector(".hamburger-menu");
     const nav = document.querySelector(".nav-menu");
     const navLinks = document.querySelectorAll(".nav-menu li");
-    console.log(navLinks);
 
     burger.addEventListener("click", () => {
       nav.classList.toggle("hidden");
